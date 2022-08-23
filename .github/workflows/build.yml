@@ -17,6 +17,10 @@ jobs:
         fetch-depth: 0
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
+      with:
+        args: >
+          -Dsonar.organization=atulec016app
+          -Dsonar.projectKey=atulec016app_terraformlearn
       env:
         GITHUB_TOKEN: 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
         SONAR_TOKEN: 30f809b9fc9e598bd34b145edc0ba22c7ec5c1ca
